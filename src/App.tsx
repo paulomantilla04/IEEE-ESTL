@@ -1,11 +1,15 @@
+import Navbar from "./components/Navbar"
+
 
 function App() {
 
   return (
     <>
-      <div className="flex items-center justify-center">
-        <p className="text-5xl font-black">IEEE</p>
-      </div>
+      <Navbar/>
+
+      <main className="flex flex-col items-center justify-center mt-32">
+
+      </main>
     </>
   )
 }
