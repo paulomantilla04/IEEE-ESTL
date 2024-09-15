@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar"
+import { Inicio } from "./components/Inicio"
 
 function App() {
 
@@ -7,7 +8,7 @@ function App() {
       <Navbar/>
 
       <main className="flex flex-col items-center justify-center mt-32">
-
+        <Inicio/>
       </main>
     </>
   )
