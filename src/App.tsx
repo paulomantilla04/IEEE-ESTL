@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar"
 import { Inicio } from "./components/Inicio"
+import { Carousel } from "./components/Carousel"
 
 function App() {
 
@@ -9,6 +10,7 @@ function App() {
 
       <main className="flex flex-col items-center justify-center mt-32">
         <Inicio/>
+        <Carousel/>
       </main>
     </>
   )
