@@ -20,6 +20,11 @@ module.exports = {
   		}
   	},
   	extend: {
+		fontFamily: {
+			'bebas': ['"Bebas Neue"', 'cursive'],
+			'jetbrains': ['"JetBrains Mono"', 'monospace'],
+			'montserrat': ['"Montserrat"']
+		  },
   		keyframes: {
   			'accordion-down': {
   				from: {
