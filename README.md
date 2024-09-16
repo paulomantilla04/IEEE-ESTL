@@ -21,6 +21,11 @@
 <li>Typescript</li>
 <li>Tailwind</li>
 
+<h2 align="center">Librerías de componentes utilizadas </h2>
+<li>Next UI</li>
+<li>Magic UI</li>
+<li>shadcn/ui</li>
+
 <h2 align="center">Instalación</h2>
 <p>Para hacer uso de este proyecto de manera local es necesario descargar el código desde el apartado “code” o si lo desea puede ejecutar los siguientes comandos en la terminal de visual studio code.</p>
 
