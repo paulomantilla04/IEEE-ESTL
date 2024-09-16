@@ -2,9 +2,13 @@ import image_a from '@/assets/image-home-1.webp';
 import image_b from '@/assets/image-home-2.webp';
 import image_c from '@/assets/image-home-3.webp';
 import BoxReveal from '@/components/magicui/box-reveal';
+import { useNavigate } from 'react-router-dom';
 
 
 export const Inicio = () => {
+  
+  const navigate = useNavigate();
+
   return (
     <section className="flex flex-row items-center justify-center space-x-20" id="home">
       <div className="flex flex-col">
@@ -15,7 +19,7 @@ export const Inicio = () => {
         </BoxReveal>
 
         <BoxReveal boxColor={'#0371a4'} duration={0.4}>
-          <p className="text-lg lg:text-xl text-center lg:text-left mt-4 max-w-2xl whitespace-normal break-words px-6 lg:px-0">
+          <p className="text-lg lg:text-xl text-center lg:text-left mt-4 max-w-2xl whitespace-normal break-words px-6 lg:px-0 text-black">
             Somos un grupo de estudiantes apasionados por el saber. Nuestro objetivo es fomentar el conocimiento técnico, la colaboración y la innovación.
           </p>
         </BoxReveal>
@@ -28,7 +32,7 @@ export const Inicio = () => {
               </button>        
             </BoxReveal>
             <BoxReveal boxColor={'#0371a4'} duration={0.5}>
-              <button className="py-4 px-6 border-[#0371a4] border-[3px] rounded-[1.5rem] font-semibold text-[#0371a4] transition-all duration-500 hover:scale-90 hover:bg-[#0371a4] hover:text-white">
+              <button className="py-4 px-6 border-[#0371a4] border-[3px] rounded-[1.5rem] font-semibold text-[#0371a4] transition-all duration-500 hover:scale-90 hover:bg-[#0371a4] hover:text-white" onClick={() => navigate('/miembros')}>
                   Miembros
               </button>
             </BoxReveal>
@@ -48,7 +52,7 @@ export const Inicio = () => {
             <img src={image_b} className='w-[15rem] h-40 object-cover rounded-xl hover:scale-90 hover:-rotate-2 transition-all duration-300 cursor-pointer' />
           </BoxReveal>
           <BoxReveal boxColor={'#0371a4'} duration={0.8}>
-            <img src={image_c} className='w-[15rem] h-40 object-cover rounded-xl hover:scale-90 hover:rotate-2 transition-all duration-300 cursor-pointer'/>
+            <img src={image_c} className='w-[15rem] h-40 object-cover rounded-xl hover:scale-90 hover:rotate-2 transition-all duration-300 cursor-pointer'  />
           </BoxReveal>
         </div>
       </div>
