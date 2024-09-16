@@ -2,29 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  overflow-x: hidden;
+html, body {
+    background-color: white;
+    overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Para navegadores que no soportan scroll-behavior */
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f0f9ff;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #0371a4;
-  border-radius: 25px;
-}
-
-::-webkit-scrollbar-button {
-  display: none;
-}
-
-@layer base {
-  :root {
-    --radius: 0.5rem;
+    width: 8px;
   }
-}
+  
+  ::-webkit-scrollbar-track {
+    background: #f0f9ff;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #0371a4;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
