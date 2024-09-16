@@ -1,13 +1,15 @@
 import { Inicio } from "@/components/Inicio"
 import { Carousel } from "@/components/Carousel"
+import { FAQ } from '@/components/FAQ'
 
 function App() {
 
   return (
     <>
-      <main className="flex flex-col items-center justify-center mt-32 bg-white">
+      <main className="mt-32 bg-white">
         <Inicio/>
         <Carousel/>
+        <FAQ/>
       </main>
     </>
   )
