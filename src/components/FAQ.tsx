@@ -29,7 +29,7 @@ export const FAQ = () => {
     <section className="flex flex-col mt-12" id='faq'>
         <div className="flex flex-col items-center lg:items-start lg:ml-64">
             <BoxReveal boxColor={'#0371a4'} duration={0.3}>
-                <h1 className="text-5xl lg:text-9xl text-[#0371a4] font-bold font-bebas">
+                <h1 className="text-7xl lg:text-9xl text-[#0371a4] font-bold font-bebas">
                     FAQ    
                 </h1>
             </BoxReveal>
