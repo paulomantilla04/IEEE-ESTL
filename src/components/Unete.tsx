@@ -13,7 +13,7 @@ interface CardData {
 const cards: CardData[] = [
   {
     title: ['DESAFIA', 'TUS', 'HABILIDADES'],
-    description: "Participa en eventos de programación como el cinsoft y pon a prueba tus conocimientos.",
+    description: "Participa en eventos de programación como el CINSOFT y pon a prueba tus conocimientos.",
     hoverClass: 'hover:rotate-6'
   },
   {
@@ -73,7 +73,7 @@ const CardGrid: React.FC = () => (
 export const Unete: React.FC = () => {
   return (
     <section className="flex flex-col mt-12 mb-32" id="join">
-      <div className="flex flex-col items-center lg:items-start lg:ml-64">
+      <div className="flex flex-col items-center lg:items-start lg:ml-60">
         <BoxReveal boxColor={'#0371a4'} duration={0.3}>
           <h1 className="text-7xl lg:text-9xl text-[#0371a4] font-bold font-bebas">
             UNETE

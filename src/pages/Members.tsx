@@ -13,9 +13,9 @@ import Mariano from '@/assets/members/mariano.webp';
 import Arturo from '@/assets/members/arturo_monroy.webp';
 
 const badges = {
-    Creador: {
-        name: "Creador",
-        description: "¡Ha sido el creador de la iniciativa IEEE ESTl!",
+    Fundador: {
+        name: "Fundador",
+        description: "¡Ha sido el fundador de la iniciativa IEEE ESTl!",
         icon: "academicons:ieee",
         color: "bg-gradient-to-r from-amber-300 to-orange-400",
         iconColor: "text-white",
@@ -89,7 +89,7 @@ const members = [
         name: "Erick Medel Galindo",
         date: "2023",
         image: ErickMedelGalindo,
-        badges: [badges.Creador, badges.Desarrollador],
+        badges: [badges.Fundador, badges.Desarrollador],
     },
     {
         name: "Johan Isay Guerrero González",

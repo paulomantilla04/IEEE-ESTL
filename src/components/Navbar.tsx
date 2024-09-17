@@ -18,19 +18,19 @@ export default function Navbar() {
           {/* Navigation Links */}
           <div className="hidden md:block flex-grow">
             <div className="flex items-center justify-center space-x-4">
-              <a href="#home" className="text-black hover:scale-110 font-montserrat hover:text-[#035b98] px-3 py-2 rounded-md text-md font-medium transition-all duration-300">
+              <a href="/#home" className="text-black hover:scale-110 font-montserrat hover:text-[#035b98] px-3 py-2 rounded-md text-md font-medium transition-all duration-300">
                 INICIO
               </a>
-              <a href="#events" className="text-black hover:scale-110 font-montserrat hover:text-[#035b98] px-3 py-2 rounded-md text-md font-medium transition-all duration-300">
+              <a href="/#events" className="text-black hover:scale-110 font-montserrat hover:text-[#035b98] px-3 py-2 rounded-md text-md font-medium transition-all duration-300">
                 EVENTOS
               </a>
-              <a href="#soon" className="text-black hover:scale-110 font-montserrat hover:text-[#035b98] px-3 py-2 rounded-md text-md font-medium transition-all duration-300">
+              <a href="/#soon" className="text-black hover:scale-110 font-montserrat hover:text-[#035b98] px-3 py-2 rounded-md text-md font-medium transition-all duration-300">
                 PROXIMAMENTE
               </a>
-              <a href="#join" className="text-black hover:scale-110 font-montserrat hover:text-[#035b98] px-3 py-2 rounded-md text-md font-medium transition-all duration-300">
+              <a href="/#join" className="text-black hover:scale-110 font-montserrat hover:text-[#035b98] px-3 py-2 rounded-md text-md font-medium transition-all duration-300">
                 UNETE
               </a>
-              <a href="#faq" className="text-black hover:scale-110 font-montserrat hover:text-[#035b98] px-3 py-2 rounded-md text-md font-medium transition-all duration-300">
+              <a href="/#faq" className="text-black hover:scale-110 font-montserrat hover:text-[#035b98] px-3 py-2 rounded-md text-md font-medium transition-all duration-300">
                 FAQ
               </a>
             </div>
