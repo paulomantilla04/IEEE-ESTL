@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { BorderBeam } from "@/components/magicui/border-beam";
 import BoxReveal from '@/components/magicui/box-reveal';
 import BlurFade from "@/components/magicui/blur-fade";
+import JoinForm from './JoinForm';
 
 interface CardData {
   title: string[];
@@ -87,9 +88,7 @@ export const Unete: React.FC = () => {
       </div>
       <CardGrid/>
       <div className='flex flex-col items-center'>
-        <a href='https://docs.google.com/forms/d/e/1FAIpQLSfTQC_cl7JRfrJLyvSOz-qasyBQZPDVEQXpw2olWcJv7DAx4Q/viewform' target='_blank' className='bg-[#0371a4] cursor-pointer text-white px-12 py-6 rounded-full text-xl font-montserrat font-bold transition-all duration-300 hover:translate-y-2 hover:bg-[#0f4159]'>
-            UNIRSE
-        </a>
+        <JoinForm text='UNIRSE' className='bg-[#0371a4] cursor-pointer text-white px-12 py-6 rounded-full text-xl font-montserrat font-bold transition-all duration-300 hover:translate-y-2 hover:bg-[#0f4159]'/>
       </div>
     </section>
   )

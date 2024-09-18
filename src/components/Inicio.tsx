@@ -1,6 +1,7 @@
 import image_a from '@/assets/image-home-1.webp';
 import image_b from '@/assets/image-home-2.webp';
 import image_c from '@/assets/image-home-3.webp';
+import JoinForm from './JoinForm';
 import BoxReveal from '@/components/magicui/box-reveal';
 import { useNavigate } from 'react-router-dom';
 
@@ -27,13 +28,11 @@ export const Inicio = () => {
 
           <div className="flex flex-row gap-6 lg:gap-10 mt-6 items-center justify-center lg:justify-start">
             <BoxReveal boxColor={'#0371a4'} duration={0.5}>
-              <button className="bg-[#0371a4] text-white py-4 px-6 rounded-[1.5rem] font-semibold transition-all duration-500 hover:scale-90 font-jetbrains">
-                Contactar
-              </button>        
+              <JoinForm text='Unirse' className='bg-[#0371a4] text-white py-4 px-6 rounded-[1.5rem] font-semibold transition-all duration-500 hover:scale-90 font-jetbrains'/>    
             </BoxReveal>
             <BoxReveal boxColor={'#0371a4'} duration={0.5}>
               <button className="py-4 px-6 border-[#0371a4] border-[3px] rounded-[1.5rem] font-semibold text-[#0371a4] font-jetbrains transition-all duration-500 hover:scale-90 hover:bg-[#0371a4] hover:text-white" onClick={() => navigate('/miembros')}>
-                  Miembros
+                Miembros
               </button>
             </BoxReveal>
 
