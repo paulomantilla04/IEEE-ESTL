@@ -68,7 +68,7 @@ const MemberCard = ({ member }: { member: Member }) => {
                                     delay={2}
                                     closeDelay={2}
                                     content={
-                                        <div className="p-4 bg-zinc-900 text-white rounded-md">
+                                        <div className="p-4 text-black rounded-md">
                                             <div className="text-small font-bold">{badge.name}</div>
                                             <div className="text-tiny">{badge.description}</div>
                                         </div>
