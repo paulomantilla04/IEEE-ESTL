@@ -1,6 +1,8 @@
 import { Inicio } from "@/components/Inicio"
 import { Carousel } from "@/components/Carousel"
 import { FAQ } from '@/components/FAQ'
+import { Unete } from "@/components/Unete"
+import { Eventos } from "@/components/Eventos"
 
 function App() {
 
@@ -9,6 +11,8 @@ function App() {
       <main className="mt-32 bg-white">
         <Inicio/>
         <Carousel/>
+        <Eventos/>
+        <Unete/>
         <FAQ/>
       </main>
     </>

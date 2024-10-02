@@ -35,7 +35,7 @@ interface CardProps {
 
 const Card = ({ img, alt }: CardProps) => {
     return (
-        <img src={img} alt={alt} className="lg:w-64 w-36 lg:mx-6 mx-3"/>
+        <img src={img} alt={alt} className="lg:w-[50%] lg:h-[50%] w-[30%] h-[30%] lg:mx-6 mx-3"/>
     )
 };
 

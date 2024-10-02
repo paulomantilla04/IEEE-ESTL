@@ -13,9 +13,9 @@ import Mariano from '@/assets/members/mariano.webp';
 import Arturo from '@/assets/members/arturo_monroy.webp';
 
 const badges = {
-    Creador: {
-        name: "Creador",
-        description: "¡Ha sido el creador de la iniciativa IEEE ESTl!",
+    Fundador: {
+        name: "Fundador",
+        description: "¡Ha sido el fundador de la iniciativa IEEE ESTl!",
         icon: "academicons:ieee",
         color: "bg-gradient-to-r from-amber-300 to-orange-400",
         iconColor: "text-white",
@@ -89,7 +89,7 @@ const members = [
         name: "Erick Medel Galindo",
         date: "2023",
         image: ErickMedelGalindo,
-        badges: [badges.Creador, badges.Desarrollador],
+        badges: [badges.Fundador, badges.Desarrollador],
     },
     {
         name: "Johan Isay Guerrero González",
@@ -158,11 +158,11 @@ function App() {
 
   return (
     <>
-      <main className="flex flex-col items-center justify-center mt-32 bg-white">
-        <h1 className="text-5xl font-bold text-black">IEEE - ESTl</h1>
-        <p className="text-3xl font-semibold text-black">Miembros de la Rama</p>
+      <main className="flex flex-col items-center justify-center mt-36 bg-white">
+        <h1 className="text-7xl text-[#0371a4] font-bebas font-bold">IEEE - ESTl</h1>
+        <p className="text-xl font-semibold text-black">Miembros de la Rama</p>
 
-        <div className='flex flex-wrap items-center justify-center gap-10 px-10 mb-10 mt-10'>
+        <div className='flex flex-wrap items-center justify-center gap-10 px-10 mb-10 mt-16'>
             {members.map((member, idx) => (
                 <BlurFade delay={0.15 + idx * 0.05} inView key={member.name}>
                     <MemberCard member={member}/>

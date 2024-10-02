@@ -29,13 +29,13 @@ export const FAQ = () => {
     <section className="flex flex-col mt-12" id='faq'>
         <div className="flex flex-col items-center lg:items-start lg:ml-64">
             <BoxReveal boxColor={'#0371a4'} duration={0.3}>
-                <h1 className="text-5xl lg:text-8xl text-[#0371a4] font-black">
+                <h1 className="text-7xl lg:text-9xl text-[#0371a4] font-bold font-bebas">
                     FAQ    
                 </h1>
             </BoxReveal>
 
             <BoxReveal boxColor={'#0371a4'} duration={0.4}>   
-                <p className="text-sm lg:text-xl text-center  mt-8 max-w-6xl whitespace-normal break-words px-6 lg:px-0 text-black">
+                <p className="text-sm lg:text-xl text-center font-jetbrains mt-4 max-w-6xl whitespace-normal break-words px-6 lg:px-0 text-black">
                     ¿Tienes alguna pregunta sobre la Rama Estudiantil IEEE - ESTl? Consulta nuestras preguntas frecuentes para obtener respuestas a algunas de las preguntas más comunes que recibimos.
                 </p>
             </BoxReveal>
@@ -48,8 +48,8 @@ export const FAQ = () => {
                     <div className=''>
                         {accordionData.map((item) => (
                             <AccordionItem key={item.id} value={item.id}>
-                            <AccordionTrigger className='text-sm lg:text-xl text-left'>{item.question}</AccordionTrigger>
-                            <AccordionContent className='text-tiny lg:text-lg'>{item.answer}</AccordionContent>
+                            <AccordionTrigger className='text-sm lg:text-xl text-left font-montserrat font-bold'>{item.question}</AccordionTrigger>
+                            <AccordionContent className='text-tiny lg:text-sm font-jetbrains'>{item.answer}</AccordionContent>
                             </AccordionItem>
                         ))}
                     </div>
