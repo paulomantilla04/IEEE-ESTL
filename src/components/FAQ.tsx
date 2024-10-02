@@ -49,7 +49,7 @@ export const FAQ = () => {
                         {accordionData.map((item) => (
                             <AccordionItem key={item.id} value={item.id}>
                             <AccordionTrigger className='text-sm lg:text-xl text-left font-montserrat font-bold'>{item.question}</AccordionTrigger>
-                            <AccordionContent className='text-tiny lg:text-lg font-jetbrains'>{item.answer}</AccordionContent>
+                            <AccordionContent className='text-tiny lg:text-sm font-jetbrains'>{item.answer}</AccordionContent>
                             </AccordionItem>
                         ))}
                     </div>
