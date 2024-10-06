@@ -35,7 +35,7 @@ const Badge = ({ icon, color, iconColor }: BadgeProps) => {
 
 const MemberCard = ({ member }: { member: Member }) => {
 
-    const [badges, setBadges] = useState<Badge[]>(member.badges);
+    const [badges] = useState<Badge[]>(member.badges);
 
     return (
 
