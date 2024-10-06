@@ -3,6 +3,7 @@ import { Carousel } from "@/components/Carousel"
 import { FAQ } from '@/components/FAQ'
 import { Unete } from "@/components/Unete"
 import { Eventos } from "@/components/Eventos"
+import { Proximamente } from "@/components/Proximamente"
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Inicio/>
         <Carousel/>
         <Eventos/>
+        <Proximamente/>
         <Unete/>
         <FAQ/>
       </main>
