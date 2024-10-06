@@ -4,9 +4,10 @@ import { useState } from "react";
 interface buttonProps {
     className: string;
     text: string;
+    disable: boolean;
 }
 
-export default function JoinForm({className, text}: buttonProps) {
+export default function JoinForm({className, text, disable}: buttonProps) {
   const radios = [
     {key: 'a', label: 'Ser parte de la comunidad.'},
     {key: 'b', label: 'Ser miembro mediante una membresía.'},
@@ -88,7 +89,7 @@ export default function JoinForm({className, text}: buttonProps) {
 
   return (
     <>
-      <button onClick={onOpen} className={className}>{text}</button>
+      <button onClick={onOpen} className={className} disabled={disable}>{text}</button>
       <Modal 
         isOpen={isOpen} 
         onOpenChange={onOpenChange} 

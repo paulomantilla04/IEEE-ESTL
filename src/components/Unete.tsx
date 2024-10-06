@@ -32,6 +32,8 @@ const cards: CardData[] = [
 const Card: React.FC<CardData> = ({ title, description, hoverClass }) => {
   const [isHovered, setIsHovered] = useState(false);
 
+
+
   return (
     <div 
       className={`relative cursor-pointer flex h-[200px] w-[300px] lg:h-[300px] lg:w-[400px] flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl transition-all duration-300 hover:scale-95 ${hoverClass}`}
@@ -72,6 +74,8 @@ const CardGrid: React.FC = () => (
 );
 
 export const Unete: React.FC = () => {
+  const disabled = true;
+
   return (
     <section className="flex flex-col mt-12 mb-32" id="join">
       <div className="flex flex-col items-center lg:items-start lg:ml-60">
@@ -88,7 +92,7 @@ export const Unete: React.FC = () => {
       </div>
       <CardGrid/>
       <div className='flex flex-col items-center'>
-        <JoinForm text='UNIRSE' className='bg-[#0371a4] cursor-pointer text-white px-12 py-6 rounded-full text-xl font-montserrat font-bold transition-all duration-300 hover:translate-y-2 hover:bg-[#0f4159]'/>
+        <JoinForm text='UNIRSE' disable={disabled} className={`${disabled === true ? 'bg-[#c4cdd1] text-[#9ca9b5] ' : 'bg-[#0371a4] cursor-pointer text-white transition-all duration-300 hover:translate-y-2 hover:bg-[#0f4159]'} px-12 py-6 rounded-full text-xl font-montserrat font-bold `}/>
       </div>
     </section>
   )
