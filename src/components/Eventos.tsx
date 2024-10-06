@@ -1,15 +1,32 @@
 import { FadeText } from "@/components/magicui/fade-text";
 import BoxReveal from "./magicui/box-reveal";
+import { useState, useEffect } from "react";
  
 import { CarouselEvents } from "./CarouselEvents";
 
 
 export const Eventos = () => {
+
+  const [activeIndex, setActiveIndex] = useState(0); 
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % 3);
+    }, 1500);
+
+    return () => {
+      clearInterval(interval);
+    };
+  },[]);
+
+  const getTextColor = (index: number) => 
+    index === activeIndex ? 'text-ieee' : 'text-black dark:text-white';
+
   return (
     <section className='flex flex-col mt-12 mb-32' id='events'>
         <div className='flex flex-col items-center lg:items-start lg:ml-60'>
         <BoxReveal boxColor={'#0371a4'} duration={0.4}>   
-            <h1 className='text-7xl lg:text-9xl text-[#0371a4] font-bold font-bebas'>
+            <h1 className='text-7xl lg:text-9xl text-ieee font-bold font-bebas'>
                 EVENTOS
             </h1>
         </BoxReveal>
@@ -28,7 +45,7 @@ export const Eventos = () => {
         <div className="flex flex-col items-center space-y-8 text-center mt-12">
 
             <FadeText
-              className="text-4xl lg:text-5xl font-black text-black dark:text-white"
+              className={`text-4xl lg:text-5xl font-black transition-colors duration-500 ${getTextColor(0)}`}
               direction="up"
               framerProps={{
                 show: { transition: { delay: 0.2 } },
@@ -37,7 +54,7 @@ export const Eventos = () => {
             />
 
             <FadeText
-              className="text-4xl lg:text-5xl font-black text-black dark:text-white"
+              className={`text-4xl lg:text-5xl font-black transition-colors duration-500 ${getTextColor(1)}`}
               direction="right"
               framerProps={{
                 show: { transition: { delay: 0.4 } },
@@ -46,7 +63,7 @@ export const Eventos = () => {
             />
 
             <FadeText
-              className="text-4xl lg:text-5xl font-black text-black dark:text-white"
+              className={`text-4xl lg:text-5xl font-black transition-colors duration-500 ${getTextColor(2)}`}
               direction="down"
               framerProps={{
                 show: { transition: { delay: 0.6 } },

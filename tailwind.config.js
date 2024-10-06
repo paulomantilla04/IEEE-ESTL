@@ -12,6 +12,8 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+
+
   	container: {
   		center: 'true',
   		padding: '2rem',
@@ -20,6 +22,9 @@ module.exports = {
   		}
   	},
   	extend: {
+		colors: {
+			ieee: '#0371a4',
+		},
 		fontFamily: {
 			'bebas': ['"Bebas Neue"', 'cursive'],
 			'jetbrains': ['"JetBrains Mono"', 'monospace'],
